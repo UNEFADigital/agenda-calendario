@@ -2,24 +2,28 @@
 
 ## 1. Características Generales del Proyecto
 
-+ Grilla cuadrada variable (máximo 32 celdas).
-+ Inicio y fin estáticos.
-+ Vecindad contada por orientación cardinal (Norte, Sur, Este, oeste).
-+ Pinta celdas cada segundo.
-+ Obstáculos variables.
-+ Notificaciones de error (recorrido finalizado, no se encontró ruta).
-+ Exportar grilla y solución (en formato JSON).
-+ Orden de exploración (Este -> Sur -> Oeste -> Norte).
++ Mes actual y año actual (lo que resta).
++ Agendar hasta 8 eventos por día.
++ Reordenar agenda a pedido.
++ Personalización de tipos de eventos (Urgente, Importante, Reunión, Celebración).
++ Hora de inicio y fin por evento.
++ Persistencia de los contenidos (LocalStorage).
++ Organización de eventos en la agenda.
++ Visualización de hora en tiempo real.
 
-## 2. Historias de usuario.
+## 2. Historias de usuario
 
-+ [ ] Como usuario, quiero ver una grilla cuadrada, es decir, con el mismo número de filas y de columnas, donde cada celda sea cuadrada de 10 píxeles de lado.
-+ [ ] Como usuario, quiero modificar las dimensiones de la grilla (en escala cuadrada).
-+ [ ] Como usuario, quiero ver marcada una celda como **inicial** en color verde y otra celda como **final** en color rojo. Dichas celdas corresponden con la esquina superior izquierda y la esquina inferior derecha de la grilla respectivamente, independientemente de las dimensiones de la grilla
-+ [ ] Como usuario, quiero señalar y borrar *obstáculos* en color gris, haciendo click en cualquier celda. Al hacer click en una celda que no sea la inicial ni la final, ésta se pintará de color gris. Al volver a hacer click sobre una celda marcada como *obstáculo*, ésta se desmarcará.
-+ [ ] Como usuario, quiero ver el recorrido de las celdas a una velocidad de 1 celda por segundo.
-+ [ ] Como usuario, quiero ver una notificación en caso de que no sea posible encontrar la ruta de **inicial** a **final**, también en caso de que se haya logrado encontrar la ruta
-+ [ ] Como usuario, quiero un botón para iniciar el proceso de recorrido. Dicho botón debe deshabilitar tanto la posibilidad de incluir nuevos obstáculos como la posibilidad de modificar el tamaño de la grilla.
-+ [ ] Como usuario, quiero ver el recorrido empleado por el algoritmo de exploración, con las celdas visitadas en color azul.
-+ [ ] Como usuario, quiero ver, en caso de no encontrar una ruta posible de **inicial** a **final**, que las celdas recorridas por el algoritmo sean de color amarillo.
-+ [ ] Como usuario, quiero tener la posiblidad de guardar el estado de la grilla (en formato JSON) cuando el recorrido haya finalizado.
++ [ ] Como usuario, quiero ver una grilla que señale los días calendario del mes en curso, con sus dias transcurridos.
++ [ ] Como usuario, quiero poder hacer click en cada recuadro de un día en específico y ver la agenda de ese dia cada hora.
++ [ ] Como usuario, quiero poder registrar eventos día a dia.
++ [ ] Como usuario, quiero poder modificar eventos día a dia.
++ [ ] Como usuario, quiero poder eliminar eventos día a día.
++ [ ] Como usuario, quiero poder registrar los eventos solo en el mes en curso, a partir del día en curso.
++ [ ] Como usuario, quiero modificar el orden de los días (Domingo primero o Lunes primero).
++ [ ] Como usuario, quiero marcar mis tipos de evento y asociarlos con un color específico:
+	+ Urgente: Rojo.
+	+ Importante: Amarillo.
+	+ Reunión: Azul.
+	+ Celebración: Verde.
++ [ ] Como usuario, quiero que mi agenda me permita modificar las horas de inicio y fin de cada evento, y que estos eventos se organicen automáticamente en el día agendado.
++ [ ] Como usuario, quiero que se visualice la hora actual del sistema, en tiempo real.
