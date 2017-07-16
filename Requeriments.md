@@ -19,7 +19,7 @@
 + [ ] Como usuario, quiero poder modificar eventos día a dia.
 + [ ] Como usuario, quiero poder eliminar eventos día a día.
 + [ ] Como usuario, quiero poder registrar los eventos solo en el mes en curso, a partir del día en curso.
-+ [ ] Como usuario, quiero modificar el orden de los días (Domingo primero o Lunes primero).
++ [ ] Como usuario, quiero visualizar el orden de los días desde Domingo hasta Sábado.
 + [ ] Como usuario, quiero marcar mis tipos de evento y asociarlos con un color específico:
 	+ Urgente: Rojo.
 	+ Importante: Amarillo.
